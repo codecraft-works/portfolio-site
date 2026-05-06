@@ -1,0 +1,200 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333333;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333333;
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.125rem;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+
+.site-title {
+    width: 180px;
+    line-height: 1px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+
+.mainvisual {
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: 60px;
+}
+
+
+.index {
+    background-color: #F5F5F5;
+    padding: 60px;
+    margin-bottom: 60px;
+}
+
+.index ol {
+    padding: 30px;
+    border: 1px solid #333333;
+}
+
+.index ol li {
+    font-size: 0.875rem;
+    text-align: center;
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+
+.index ol li:last-child {
+    margin-bottom: 0px;
+}
+
+
+.images {
+    margin-bottom: 60px;
+}
+
+.images ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.images ul li {
+    width: 49%;
+}
+
+
+.detail {
+    background-color: #F5F5F5;
+    padding: 60px;
+    margin-bottom: 60px;
+}
+
+.content {
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content-overview {
+    width: 280px;
+    padding-right: 60px;
+    border-right: 1px solid #333333;
+}
+
+.content-detail {
+    padding-left: 40px;
+}
+
+.content dl dt {
+    font-weight: bold;
+}
+
+.content dl dd {
+    margin-bottom: 10px;
+}
+
+.content dl dd:last-child {
+    margin-bottom: 0px;
+}
+
+.content-detail p {
+    margin-bottom: 20px;
+}
+
+.content-detail a:hover {
+    opacity: 0.7;
+}
+
+
+footer p {
+    font-size: 0.675rem;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-title {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .index {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .index ol {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .images ul {
+        flex-direction: column;
+    }
+
+    .images ul li {
+        width: 100%;
+    }
+
+    .detail {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .content {
+        display: block;
+        margin:0 20px;
+    }
+
+    .content-overview {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 40px;
+        border-right: none;
+        border-bottom: 1px solid #333333;
+        margin-bottom: 40px;
+    }
+
+    .content-detail {
+        padding-left: 0;
+    }
+
+}
