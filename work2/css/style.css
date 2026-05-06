@@ -1,0 +1,152 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    background-color: #F4F9FF;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+#header {
+    width: 160px;
+    margin: 60px 0 15px;
+}
+
+#header .site-title {
+    line-height: 1px;
+}
+
+#header .site-title a {
+    display: block;
+}
+
+#mainvisual {
+    margin-bottom: 60px;
+}
+
+#index {
+    background-color: #FFFFFF;
+    padding: 30px 0;
+    margin-bottom: 60px;
+}
+
+#index .list {
+    font-size: 0.875rem;
+    margin-left: 20px;
+}
+
+#index .list li {
+    margin-bottom: 20px;
+}
+
+#index .list li:last-child {
+    margin-bottom: 0;
+}
+
+
+#detail {
+    margin-bottom: 100px;
+}
+
+#detail .content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    font-size: 0.875rem;
+}
+
+#detail .content img {
+    width: 270px;
+}
+
+#detail .content .title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#detail .content dl {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    margin-bottom: 20px;
+}
+
+#detail .content dl dt {
+    width: 25%;
+}
+
+#detail .content dl dd {
+    width: 75%;
+}
+
+#detail .content .text {
+    margin-bottom: 20px;
+}
+
+#detail .content a {
+    color: #333;
+}
+
+#detail .content a:hover {
+    opacity: 0.8;
+}
+
+
+#footer {
+    margin-bottom: 15px;
+}
+
+#footer p {
+    font-size: 0.625rem;
+}
+
+
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    .inner {
+        padding: 0 30px;
+    }
+
+    #detail .content {
+    display: block;
+    }
+
+    #detail .content img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
