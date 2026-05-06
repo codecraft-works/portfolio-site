@@ -1,0 +1,109 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #2B2A27;
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", "sans-serif";
+    text-align: center;
+}
+
+a {
+    color: #2B2A27;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+
+.wrapper {
+    margin: 0 auto;
+}
+
+
+
+#header {
+    margin-bottom: 80px;
+}
+
+#header img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+#site-title {
+    margin-bottom: 80px;
+}
+
+#site-title .wrapper {
+    padding: 0 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+
+#content {
+    margin-bottom: 80px;
+}
+
+#content ul {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+#content ul li {
+    width: 100%;
+}
+
+#content ul img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#content .btn {
+    font-size: 0.875rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 60px;
+    border: 1px solid #2B2A27;
+}
+
+
+#footer {
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+#footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#footer ul li {
+    font-size: 0.75rem;
+}
+
+
+@media (max-width: 834px) {
+    #content ul {
+        flex-direction: column;
+    }
+}
