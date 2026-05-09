@@ -1,8 +1,157 @@
-<h1>ポートフォリオ</h1>
-
-<ul>
-  <li><a href="work1/index.html">作品①</a></li>
-  <li><a href="work2/index.html">作品②</a></li>
-  <li><a href="work3/index.html">作品③</a></li>
-  <li><a href="work4/index.html">作品④</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <meta name="description" content="テキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <a class="site-title" href="#">Portofolio</a>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Top</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="profile">
+            <div class="wrapper mainvisual">
+                <div class="introduce">
+                    <p class="label">Webコーダー</p>
+                    <h1 class="name">haku</h1>
+                    <p class="profile-text">HTML/CSSを中心に、レスポンシブ対応を含めたコーディングを行っています。</p>
+                    <p class="profile-text">LPの作成や、HTML/CSSの修正等のコーディング案件に対応可能です。</p>
+                    <p class="profile-text">丁寧かつ迅速な対応を心がけています。</p>
+                    <a class="btn" href="#works">制作実績を見る</a>
+                </div>
+                <img src="img/mainvisual.jpg" alt="デスクトップPC">
+            </div>
+        </section>
+        <section id="works">
+            <div class="wrapper">
+                <h2 class="section-title">Works</h2>
+                <p>これまでに制作したサイトの一部をご紹介します。</p>
+                <ul class="site-items">
+                    <li class="site-item">
+                        <img src="img/item1.jpg" alt="自転車LPサイトサムネイル">
+                        <h3 class="item-title">(仮想)自転車LPサイト<br>
+                            (模写コーディング＋軽微アレンジ)
+                        </h3>
+                        <p>レスポンシブ対応のLPサイトを制作。アンカーリンクを設置し、UXを考慮した設計やボタンの視認性を向上させました。</p>
+                        <a class="btn" href="https://codecraft-works.github.io/portfolio-site/work1/index.html">詳細を見る</a>
+                    </li>
+                    <li class="site-item">
+                        <img src="img/item2.jpg" alt="自作写真集PRページサムネイル">
+                        <h3 class="item-title">(仮想)自作写真集PRページ<br>
+                            (模写コーディング＋軽微アレンジ)
+                        </h3>
+                        <p>シンプルで崩れにくいレイアウトを構築し、デバイスごとに最適な表示になるよう調整。保守性を意識した構造で実装しました。</p>
+                        <a class="btn" href="https://codecraft-works.github.io/portfolio-site/work2/index.html">詳細を見る</a>
+                    </li>
+                    <li class="site-item">
+                        <img src="img/item3.jpg" alt="レシピ情報TOPページサムネイル">
+                        <h3 class="item-title">(仮想)レシピ情報TOPページ<br>
+                            (模写コーディング＋軽微アレンジ)
+                        </h3>
+                        <p>画像の並び替えやhoverアニメーションを実装。メインビジュアルが常に画面いっぱいに表示されるよう設計しました。</p>
+                        <a class="btn" href="https://codecraft-works.github.io/portfolio-site/work4/index.html">詳細を見る</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="wrapper flex">
+            <section id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skill-items">
+                    <li class="skill-item">
+                        <img src="img/html5.svg" alt="HTMLアイコン">
+                        <div>
+                            <h3>HTML/CSS</h3>
+                            <p>レスポンシブ対応を含めたLP・Webサイトのコーディングが可能です。</p>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <img src="img/javascript.svg" alt="JavaScriptアイコン">
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>簡単なUI(hoverアニメーション等の実装が可能です。)</p>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <img src="img/vscode.svg" alt="VSCodeアイコン">
+                        <div>
+                            <h3>使用ツール</h3>
+                            <p>VSCode / Github</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="about">
+                <h2 class="section-title">About</h2>
+                <p>未経験からWeb制作の学習を開始し、現在はコーディングを中心に活動しています。</p><br>
+                <p>模写コーディングを通じて、正確な再現と崩れない実装を意識して制作に取り組んでまいりました。</p><br>
+                <p>納期遵守はもちろんのこと、迅速かつ綿密なコミュニケーションと、正確な実装を意識しています。</p><br>
+                <p>また、専門用語を多用せず、分かりやすい説明を心がけています。</p>
+            </section>
+        </div>
+        <section id="service">
+            <div class="wrapper">
+                <h2 class="section-title">Service</h2>
+                <p>対応可能な実務は以下の通りです。</p>
+                <ul class="service-items">
+                    <li class="service-item">
+                        <img src="img/desktop.svg" alt="PCアイコン">
+                        <div>
+                            <h3>LPコーディング</h3>
+                            <p>デザインカンプからのコーディングに対応します。</p>
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <img src="img/wrench.svg" alt="スパナアイコン">
+                        <div>
+                            <h3>HTML/CSS修正</h3>
+                            <p>既存サイトの修正・調整を行います。</p>
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <img src="img/phone.svg" alt="SPアイコン">
+                        <div>
+                            <h3>レスポンシブ対応</h3>
+                            <p>スマホ・タブレット表示の最適化を行います。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="wrapper">
+                <h2 class="section-title">Contact</h2>
+                <p>お仕事のご依頼・ご相談はお気軽にご連絡ください。</p>
+                <div class="mail">
+                    <a href="mailto:haku.webworks@gmail.com">
+                        <img src="img/mail.svg" alt="メールアイコン">
+                        <p>haku.webworks@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <p>© 2026 All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
