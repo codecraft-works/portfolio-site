@@ -303,6 +303,10 @@ footer p {
 
 @media (max-width: 768px) {
 
+    header ul {
+        display: none;
+    }
+
     .introduce {
         min-width: 200px;
     }
