@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    padding-top: 110px;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+
+/* header */
+
+header {
+    background-color: #fff;
+    height: 110px;
+    padding: 30px 60px;
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1:hover {
+    opacity: 0.7;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav li {
+    border-left: 1px solid #333;
+}
+
+header nav li:last-child {
+    border-right: 1px solid #333;
+}
+
+header nav a {
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header nav li:hover {
+    opacity: 0.5;
+}
+
+.hamburger-btn {
+    display: none;
+    font-size: 2rem;
+}
+
+.hamburger-btn:hover {
+    opacity: 0.7;
+}
+
+.hamburger-menu {
+    display: none;
+    z-index: 3;
+    position: fixed;
+    top: 110px;
+    right: 0px;
+    height: calc(100vh - 110px);
+    width: 300px;
+    background-color: #333;
+}
+
+.hamburger-menu.active {
+    display: block;
+}
+
+.hamburger-menu li {
+    border-bottom: 1px solid #fff;
+}
+
+.hamburger-menu li:hover {
+    opacity: 0.7;
+}
+
+.hamburger-menu li a {
+    display: block;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+
+/* Mainvisual */
+
+#mainvisual {
+    color: #fff;
+    background-color: #787575;
+    padding: 30px 60px;
+}
+
+#mainvisual h2 {
+    margin-bottom: 50px;
+}
+
+#mainvisual p {
+    margin: 20px 0;
+}
+
+#mainvisual a {
+    color: #fff;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    margin-top : 40px;
+    border-radius: 10px;
+}
+
+#mainvisual a:hover {
+    opacity: 0.7;
+}
+
+
+
+/* FAQ */
+
+#faq {
+    max-width: 1000px;
+    padding: 30px 60px;
+    margin: 0 auto;
+}
+
+.accordion-question {
+    width: 100%;
+    padding: 15px 30px;
+    border: 1px solid #333;
+    margin-top : 20px;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.accordion-answer {
+    display: none;
+    width: 100%;
+    padding: 15px 30px;
+    border: 1px solid #333;
+    border-top: none;
+    border-radius: 10px;
+}
+
+.accordion-answer.active {
+    display: block;
+}
+
+
+/* Service */
+
+#service {
+    max-width: 1000px;
+    padding: 30px 60px;
+    margin: 0 auto;
+}
+
+.tab-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tab-button {
+    width: 100px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #333;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.tab-button:hover {
+    opacity: 0.7;
+}
+
+.tab-content {
+    width: 100%;
+    display: none;
+    padding: 25px 10px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-button.active {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Contact */
+
+#contact {
+    max-width: 1000px;
+    padding: 30px 60px;
+    margin: 0 auto;
+}
+
+#contact p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#contact .modal-btn {
+    display: block;
+    padding: 15px 30px;
+    border: 1px solid #333;
+    margin-top : 20px;
+    border-radius: 10px;
+}
+
+
+.modal {
+    display: none;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    text-align: center;
+    width: 60%;
+    padding: 40px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.modal h3 {
+    padding-bottom: 40px;
+}
+
+.modal .modal-item {
+    margin-bottom: 20px;
+}
+
+.modal .close-btn {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    padding: 5px 10px;
+    margin : 40px auto 0px;
+}
+
+
+/* footer */
+footer {
+    padding: 30px 60px;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+
+/*-------------------------------------------
+タブレット
+-------------------------------------------*/
+@media (max-width: 1024px) {
+
+    header nav {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: block;
+    }
+
+}
+
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+
+@media (max-width: 768px) {
+
+    header, #mainvisual, #service, #faq, #contact, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hamburger-menu {
+        width: 200px;
+    }
+    .modal-content {
+        width: 90%;
+    }
+
+}

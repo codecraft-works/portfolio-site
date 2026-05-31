@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript UI Demo | Codecraft Works</title>
+    <meta name="description" content="ハンバーガーメニュー、タブ切り替え、アコーディオン、モーダルのJavaScript実装デモです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-menu">
+            <h1><a href="#">Codecraft Works</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#mainvisual">Demo</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-btn">≡</button>
+        </div>
+        <div class="hamburger-menu">
+            <ul>
+                <li><div><a href="#mainvisual">Demo</a></div></li>
+                <li><div><a href="#service">Service</a></div></li>
+                <li><div><a href="#faq">FAQ</a></div></li>
+                <li><div><a href="#contact">Contact</a></div></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="mainvisual">
+            <h2>JavaScript UI Demo</h2>
+            <p>Webサイトでよく使う動きをまとめました。</p>
+            <p>ハンバーガーメニュー、タブ切り替え、アコーディオン、モーダルの実装例です。</p>
+            <a href="#service">サービス内容を見る</a>
+        </section>
+        <section id="service">
+            <h2>Service</h2>
+            <div class="tab-buttons">
+                <button class="tab-button active">HTML/CSS修正</button>
+                <button class="tab-button">JavaScript実装</button>
+                <button class="tab-button">WordPress更新</button>
+            </div>
+            <div class="tab-contents">
+                <div class="tab-content active">
+                    <p>既存ページの余白調整、文字サイズ調整、画像差し替え、スマホ表示の崩れ修正などに対応します。</p>
+                </div>
+                <div class="tab-content">
+                    <p>ハンバーガーメニュー、アコーディオン、タブ切り替え、モーダルなど、基本的なUI実装に対応します。</p>
+                </div>
+                <div class="tab-content">
+                    <p>投稿・固定ページの編集、画像差し替え、メニュー変更、お問い合わせフォーム設置などの基本更新に対応します。</p>
+                </div>
+            </div>
+        </section>
+        <section id="faq">
+            <h2>FAQ</h2>
+            <ul>
+                <li>
+                    <button class="accordion-question">
+                        <p>Q.　スマホ表示の崩れ修正はできますか？</p>
+                        <span class="">▼</span>
+                    </button>
+                    <div class="accordion-answer">
+                        <p>A.　内容を確認したうえで、余白・文字サイズ・画像サイズ・配置崩れなどの軽微な修正に対応可能です</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="accordion-question">
+                        <p>Q.　JavaScriptの軽微な修正はできますか？</p>
+                        <span class="">▼</span>
+                    </button>
+                    <div class="accordion-answer">
+                        <p>A.　ハンバーガーメニュー、アコーディオン、モーダルなど、基本的なUI実装であれば内容確認のうえ対応可能です。</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="accordion-question">
+                        <p>Q.　WordPress更新は対応できますか？</p>
+                        <span class="">▼</span>
+                    </button>
+                    <div class="accordion-answer">
+                        <p>A.　投稿・固定ページの編集、画像差し替え、メニュー変更、お問い合わせフォーム設置など、基本的な更新作業に対応可能です。</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>簡単な修正・UI実装をご相談ください</p>
+            <button class="modal-btn">対応可能な内容を見る</button>
+            <div class="modal">
+                <div class="modal-background">
+                </div>
+                <div class="modal-content">
+                    <h3>対応可能な内容</h3>
+                    <ul class="modal-items">
+                        <li class="modal-item">HTML/CSSの軽微修正</li>
+                        <li class="modal-item">スマホ表示の調整</li>
+                        <li class="modal-item">画像差し替え</li>
+                        <li class="modal-item">ハンバーガーメニュー</li>
+                        <li class="modal-item">アコーディオン</li>
+                        <li class="modal-item">タブ切り替え</li>
+                        <li class="modal-item">モーダル実装</li>
+                    </ul>
+                    <button class="close-btn">✕</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© CodeCraft Works</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
